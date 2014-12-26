@@ -25,7 +25,7 @@
                 </h2>
             </md-toolbar>
 
-                            <md-button layout="row"  layout-align="end end" ng-click="showSimpleToast()"  class="md-fab md-warn" target="_blank">
+                            <md-button layout="row"    layout-align="end end" ng-click="showSimpleToast()"  class="md-fab-fix md-fab md-warn" target="_blank">
                                 +
                             </md-button>
 
@@ -33,7 +33,18 @@
 
     </section>
 </div>
+<style>
+    .md-fab-fix {
 
+        margin: 25px;
+
+        position: fixed;
+
+        z-index: 301;
+        right: 0;
+        top: 0;
+    }
+</style>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>
